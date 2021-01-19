@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8">
+         <title>My Portfolio</title>
+     </head>
+     <style>
+         table, th, td{
+             border: 2px solid black;
+             border-collapse: collapse;
+         }
+         aside{
+            float: right;
+            margin-left: 15px;
+         }
+     </style>
+     <body>
+         <header>
+            <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20200225182221/How-to-Become-Google-Developer-Students-ClubDSC-Lead.png" alt="DSC">
+            <h1>Barebones Portfolio Project Website</h1>
+            <p><em>Developer Student Club, SIT</em></p>
+         </header>
+         <aside>
+            <p><em>Get Started</em></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Eq5XuC6cEek?controls=0"></iframe>            
+         </aside>
+         <table>
+            <caption>Know Me Better</caption>
+            <tr>
+                <th>Personalia</th>
+                <td>
+                    <dl>
+                        <dt>Name:</dt>
+                        <dd>- Aditi Goyal</dd>
+                        <dt>Branch:</dt>
+                        <dd>- Computer Science</dd>
+                        <dt>Batch:</dt>
+                        <dd>- 2018-22</dd>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <th>Education</th>
+                <td>
+                    <dl>
+                        <dt>Class 10</dt>
+                        <dd>- International School of Bucharest</dd>
+                        <dt>Class 12</dt>
+                        <dd>- The Ostrava International School</dd>
+                        <dt>College</dt>
+                        <dd>- Symbiosis Institute of Technology</dd>
+                    </dl>
+                </td>
+            </tr>
+            <tr>
+                <th>Hobbies</th>
+                <td>
+                    Reading, Food Blogging, Content Writing, Trekking, Volunteering                 
+                </td>                
+            </tr>
+         </table>
+         <form action="/" autocomplete="on">
+             <fieldset>
+                <legend>Contact Details:</legend>
+                <label for="fname">Firstname:</label><br>
+                <input type="text" id="fname" name="FirstName" required><br>
+                <label for="lname">Lastname:</label><br>
+                <input type="text" id="lname" name="LastName"  required><br>
+                <label for="email">Email ID:</label><br>
+                <input type="email" id="email" name="Email" required><br>
+                <label for="phno.">Phone No.:</label><br>
+                <input type="tel" id="phno." name="phone"  pattern="[0-9]{10}" required><br>
+                <label for="">Gender:</label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="Other">
+                <label for="other">Other</label><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </fieldset>
+         </form>
+         <footer>
+           <p><b>Aditi Goyal</b></p>
+           <p><a href="mailto:aditi.goyal.btech2018@sitpune.edu.in">Send an Email</a></p> 
+         </footer>
+     </body>
+ </html>
