@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+         <title>My Portfolio</title>
+         <link rel="preconnect" href="https://fonts.gstatic.com">
+         <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">  
+         <link rel="stylesheet" href="styles.css">
+     </head>
+     <body>
+        <header>
+            <div class="hero-text">
+                <h1>Barebones Portfolio Project Website</h1>
+                <p><em>Developer Student Club, SIT</em></p>
+            </div>
+            <div class="hero-image"></div>
+        </header>
+           
+        <section class="About">
+            <i class="fab fa-earlybirds fa-5x"></i>
+            <p>
+                Hi, My name is Aditi Goyal. <br> 
+                I am a 3<sup>rd</sup> Year Computer Science student at the <br> 
+                Symbiosis Institute of Technology, Pune. <br>
+               I'm aspiring to be a full-stack developer.            
+            </p>
+        </section>
+         
+         <div class="course">
+            <iframe src="https://www.youtube.com/embed/Eq5XuC6cEek?controls=0"></iframe>
+            <div class="description">
+               <h2>About This Project</h2>
+               <p>I'm making this website as a part of DSC's 30 Days of Web Development course. They take us through all the basics to get us started.
+                    It is the perfect way to get started, if you are a beginner and good form of practice if you need some revision. I'm taking this course as 
+                    a form of revision and it has been really fun and insightful so far.
+               </p>
+               <a href="https://github.com/30DaysofWebDEV/DSC-30-Days-of-Web.git" target="_blank"><i class="fab fa-github-alt fa-lg"></i>  Visit GitHub</a>
+            </div>                      
+         </div>
+
+         <section class="table">
+            <table class="education">
+                <tr>
+                    <td><i class="fas fa-university fa-5x"></i></td>
+                </tr>         
+                <tr>
+                    <th>Education</th>
+                </tr>
+                <tr>
+                    <td>  
+                        <ul>
+                            <li>Class 10 - International School of Bucharest</li>
+                            <li>Class 12 - The Ostrava International School</li>
+                            <li>College  - Symbiosis Institute of Technology</li>
+                        </ul>                        
+                    </td>
+                </tr>
+            </table>
+            <table class="hobbies">
+                <tr>
+                    <td><i class="fas fa-heartbeat fa-5x"></i></i></td>
+                </tr>
+                <tr>
+                    <th>Hobbies</th>
+                </tr>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>Reading</li>
+                            <li>Food Blogging & Content Writing</li>
+                            <li>Trekking</li>
+                            <li>Volunteering</li>
+                        </ul>              
+                    </td>                
+                </tr>
+            </table>
+        </section>
+
+        <section class="form">
+            <form action="/" autocomplete="on">
+                <fieldset>
+                   <legend>Contact Details:</legend>
+                   <label for="fname">Firstname:</label>
+                   <input type="text" id="fname" name="FirstName" required><br>
+                   <label for="lname">Lastname:</label>
+                   <input type="text" id="lname" name="LastName"  required><br>
+                   <label for="email">Email ID:</label>
+                   <input type="email" id="email" name="Email" required><br>
+                   <label for="phno.">Phone No.:</label>
+                   <input type="tel" id="phno." name="phone"  pattern="[0-9]{10}" required><br>
+                   <label for="">Gender:</label><br>
+                   <input type="radio" id="male" name="gender" value="Male">
+                   <label for="male">Male</label><br>
+                   <input type="radio" id="female" name="gender" value="Female">
+                   <label for="female">Female</label><br>
+                   <input type="radio" id="other" name="gender" value="Other">
+                   <label for="other">Other</label><br>
+                   <input type="submit" value="Submit">
+                   <input type="reset" value="Reset">
+               </fieldset>
+            </form>
+        </section>
+         
+         <footer>
+           <p><a href="mailto:aditi.goyal.btech2018@sitpune.edu.in"><i class="fas fa-envelope fa-lg"></i>  Aditi Goyal</a></p> 
+         </footer>
+
+         <script src="https://kit.fontawesome.com/ced2f8f391.js" crossorigin="anonymous"></script> 
+     </body>
+ </html>

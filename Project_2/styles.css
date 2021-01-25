@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    
+    vertical-align: baseline;
+    background: transparent;
+}
+body{
+    background-image: linear-gradient(to right,lightblue, white, lightblue);
+}
+
+/*header*/
+.hero-image{
+ background: url("https://media-exp1.licdn.com/dms/image/C4E1BAQHa62zaqGEWng/company-background_10000/0/1560777210421?e=2159024400&v=beta&t=xBECVSM8m6jsJYzgSLjwHecua2Knf23u1pfAPUZTNsU") center;
+ background-size: contain;
+ background-repeat: no-repeat;
+ height: 550px;
+ position: relative;
+ margin-bottom: 20px;
+ padding-bottom: 50px;
+}
+
+
+
+.hero-text{
+    padding: 40px 0;
+    text-align: center; 
+    color:black;
+    font-family: "goldman", cursive;
+    font-size: 1.5em;
+}
+@media screen and (max-width: 920px){
+    .hero-image{
+        display: none;
+    }
+    .hero-text{
+        background-color: white;
+    }
+}
+/*about*/
+.About{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+.About p{
+    font-family: 'Yusei Magic', sans-serif;
+    font-size: 24px;;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+.fa-earlybirds{
+    color: black;
+    margin-bottom: 20px;
+}
+
+ /*course*/
+ .course{
+     display: flex;
+     margin: 70px 0;
+     padding: 50px 0;
+     text-align: center;
+     background-color: white;
+     justify-content: space-evenly;
+ }
+ @media screen and (max-width: 1239px){
+     .course{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ }
+ .course iframe{
+    width:600px; 
+    height:350px;
+    border: 3px dashed lightblue;
+    border-radius: 10px;
+    padding: 15px;
+ }
+
+ .description{
+     font-family: 'Yusei Magic', sans-serif;
+ }
+ .description a{
+    border: 2px solid black;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 15px;
+    display: inline-block;
+ }
+ .description a:hover{
+     background-color: black;
+     color: white;
+ }
+ .description h2{
+    padding-top: 60px;
+ }
+ .description p{
+     padding: 20px 0;
+     text-align: justify;
+     width: 500px;
+ }
+
+/*table*/
+.table {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+}
+th{
+    font-size: x-large;
+}
+th,td {
+    padding: 14px 25px;
+    font-family: "yusei magic", sans-serif;
+}
+ul{
+    text-align: justify;
+}
+
+@media screen and (max-width: 680px){
+    .course iframe{
+       width: 380px;
+       height: 200px;
+    }
+    .table{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .description p{
+        width: 380px;
+    }
+}
+/*contact form*/
+.form{
+    background-color: white;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    font-family: 'yusei magic', sans-serif;
+    margin-bottom: 50px;
+}
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 3px dashed lightblue;
+}  
+legend {
+    background-color:lightblue;
+    color: white;
+    padding: 5px 10px;
+}  
+input{
+    margin: 10px;
+    border: 1px solid lightblue;
+    padding: 5px;
+}
+
+input[value="Submit"]{
+    border: 2px solid lightblue;
+    color: black;
+    text-align: center;
+    padding: 5px 15px;
+    display: inline-block;
+    font-family: 'yusei magic', sans-serif;
+} 
+input[type="reset"]{
+    border: 2px solid lightblue;
+    color: black;
+    text-align: center;
+    padding: 5px 15px;
+    display: inline-block;
+    font-family: 'yusei magic', sans-serif;
+}
+[type="reset"]:hover{
+    background-color:lightblue;
+    color: white;
+}
+[value="Submit"]:hover{
+    background-color:lightblue;
+    color: white;
+}
+
+/*footer*/
+footer{
+    text-align: center;
+    font-family: 'yusei magic', sans-serif;
+    margin-bottom: 10px;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
